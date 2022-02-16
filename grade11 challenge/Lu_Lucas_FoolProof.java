@@ -10,12 +10,12 @@ import java.util.Scanner;
 
 public class Lu_Lucas_FoolProof {
     public static void main(String args[]) {
-    	Scanner in = new Scanner(System.in);
+    	 Scanner in = new Scanner(System.in);
       String inputNum;
             
       do{
          System.out.print("Enter the numerator: ");
-    	   inputNum = in.nextLine();
+    	    inputNum = in.nextLine();
          
          //if the input is a number, run the below code
          if(isNumeric(inputNum)){
@@ -40,9 +40,9 @@ public class Lu_Lucas_FoolProof {
            }
            //if input value is not a number and not start with character 'Q' or 'q', print message
            System.out.println("You entered bad data.");
-    		  System.out.println("Please try again.");
+    		     System.out.println("Please try again.");
          }
-
+      //if input value first character is not q or Q, continue loop until it is 
       }while(!(inputNum.charAt(0)=='Q') || !(inputNum.charAt(0)=='q'));
           	
     }
@@ -54,10 +54,12 @@ public class Lu_Lucas_FoolProof {
     */	    
     public static boolean isNumeric(String strNum){
     	try{
+      //if it could be parse, return true
     		double number = Double.parseDouble(strNum);
-         return true;
-      }    	
-    	catch(NumberFormatException nfe) {
+      return true;
+     }    	
+     catch(NumberFormatException nfe) {
+      //if it shows an error of casing, return false
     		return false;
     	}
     }
