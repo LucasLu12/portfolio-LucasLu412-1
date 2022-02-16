@@ -34,27 +34,27 @@ public class Lu_Lucas_SASTriangleSolver{
      * @return return smallest angle in degree
      */
      public static double triangleSolver(double angleRadian, double side1, double side2) {
-       //get the degree of angle given in radian
+      //get the degree of angle given in radian
     	 double triangleDegree = angleRadian;
     	 double triangleSide1 = side1;
     	 double triangleSide2 = side2;
     	 
-       //get the third sides and other angles
+      //get the third sides and other angles
     	 double side3 = Math.sqrt(Math.pow(triangleSide1, 2) + Math.pow(triangleSide2, 2) - (2 * triangleSide1 * triangleSide2 * Math.cos(triangleDegree)));
-       double secondDegree = Math.acos((Math.pow(triangleSide2,2) + Math.pow(side3,2) - Math.pow(triangleSide1,2)) / (2 * side3 * triangleSide2));
-       secondDegree = secondDegree * 180 / 3.1415926;
+      double secondDegree = Math.acos((Math.pow(triangleSide2,2) + Math.pow(side3,2) - Math.pow(triangleSide1,2)) / (2 * side3 * triangleSide2));
+      secondDegree = secondDegree * 180 / 3.1415926;
        
-       //convert all angles to the degree
+      //convert all angles to the degree
     	 double thirdDegree = 180 - triangleDegree - secondDegree;
-       triangleDegree = triangleDegree * 180 / 3.1415926;
+      triangleDegree = triangleDegree * 180 / 3.1415926;
     	 
-       //compare those angles and return the smallest one
+      //compare those angles and return the smallest one
     	 if (secondDegree < triangleDegree && secondDegree < thirdDegree) {
-    		 return secondDegree;
+    	   return secondDegree;
     	 } else if (triangleDegree < secondDegree && triangleDegree < thirdDegree) {
-    		 return triangleDegree;
+    	   return triangleDegree;
     	 } else if (thirdDegree < secondDegree && thirdDegree < triangleDegree) {
-    		 return thirdDegree;
+    	   return thirdDegree;
     	 } 
     	 return 0;
      }
