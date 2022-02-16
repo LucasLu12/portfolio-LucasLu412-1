@@ -8,7 +8,7 @@
 import java.util.Scanner;
 public class Lu_Lucas_Encryption{
   public static void main(String args[]){
-	//declare scanner object 'in'
+    //declare scanner object 'in'
     Scanner in = new Scanner (System.in);
 
     System.out.println("please enter a line to be encrypted: ");
@@ -30,7 +30,7 @@ public class Lu_Lucas_Encryption{
       
         //for loop j to encrypt each character in each word
         for(int j = 1; j < inputSplit[i].length() - 1; j++){
-        	//each middle character plus 2 in ASCII and get the new character
+            //each middle character plus 2 in ASCII and get the new character
             newChar = (char)(inputSplit[i].charAt(j) + 2);
             //add new character to new String
             newString = newString + newChar;
