@@ -186,12 +186,12 @@ public class Human {
       
       //test run method
       System.out.println("\nTest object 2 with run method");
-      human1.run(human2_run);
+      human2.run(human2_run);
       System.out.printf("After run %d km, the current weight is %.1f\n",human2_run,human2.getWeight());
       
       //test sleep method
       System.out.println("\nTest object 2 with the sleep method");
-      human1.sleep(human2_sleep);
+      human2.sleep(human2_sleep);
       System.out.printf("After sleep %d hours, the current energy level should be: %.2f percent",human2_sleep,human2.getEnergyLvl());
       
     }
