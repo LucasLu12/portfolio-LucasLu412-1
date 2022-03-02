@@ -75,7 +75,7 @@ public class Human{
    }
    
    /**
-   * calculate how many weight lost after running and energy
+   * calculate how many weight lost after running and energy, each km will lose 3 percent of energy and 0.001 kg of weight
    * @param km  double type, how many km is running    
    */
    public void run(double km){
