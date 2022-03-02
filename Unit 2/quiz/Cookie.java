@@ -26,10 +26,10 @@ public class Cookie{
   }
   
   /**
-  * This is cookie constructor assign value to attributes with three paramters
-  * @param name      String type which store cookie's name
-  * @param weight    double type stores cookie's weight
-  * @param calories  int type stores cookie's calories
+  * This is cookie constructor with three parameters and assign value to attributes 
+  * @param name      String   which store cookie's name
+  * @param weight    double   stores cookie's weight
+  * @param calories  int      stores cookie's calories
   */
   public Cookie(String name, double weight, int calories){
     this.name = name;
@@ -39,11 +39,11 @@ public class Cookie{
   }
   
   /**
-  * This cookie constructor assign values to attributes with four paramters
-  * @param name        String type which store cookie's name
-  * @param weight      double type stores cookie's weight
-  * @param calories    int type stores cookie's calories
-  * @param isPackaged  boolean type to judge if it is packaged
+  * This cookie constructor with four parameters and assign values to attributes
+  * @param name        String   which store cookie's name
+  * @param weight      double   stores cookie's weight
+  * @param calories    int      stores cookie's calories
+  * @param isPackaged  boolean  to judge if it is packaged
   */
   public Cookie(String name, double weight, int calories, boolean isPackaged){
     this.name = name;
@@ -54,7 +54,7 @@ public class Cookie{
   
   /**
   * accessors: return the name attributes value
-  * @return return private attributes "name" in this class
+  * @return  String  return private attributes "name" in this class
   */
   public String getName(){
        return this.name;
@@ -62,7 +62,7 @@ public class Cookie{
   
   /**
   * accessors: return the weight attributes value
-  * @return return private attributes "weight" in this class
+  * @return  double  return private attributes "weight" in this class
   */
   public double getWeight(){
        return this.weight;
@@ -70,7 +70,7 @@ public class Cookie{
   
   /**
   * accessors: return the calories attributes value
-  * @return  return private attributes "calories" in this class
+  * @return  int  return private attributes "calories" in this class
   */
   public int getCalories(){
        return this.calories;
@@ -78,7 +78,7 @@ public class Cookie{
   
   /**
   * accessors: return the isPackaged attributes value
-  * @return  return private attributes "isPackaged" in this class
+  * @return  boolean  return private attributes "isPackaged" in this class
   */
   public boolean getIsPackaged(){
        return this.isPackaged;
@@ -96,9 +96,9 @@ public class Cookie{
   /**
   * This method judege how many calories the cookies give 
   * @param weight this is removed weight of cookies
-  * @return -1            return -1 means the cookie is not eaten because weight is not losing or greater than the weight of cookie
-  * @return -2            return -2 means this cookie is not eaten because it is still packaged
-  * @return caloriesGiven double type return calories eaten cookies give 
+  * @return -1             int    return -1 means the cookie is not eaten because weight is not losing or greater than the weight of cookie
+  * @return -2             int    return -2 means this cookie is not eaten because it is still packaged
+  * @return caloriesGiven double  return calories eaten cookies give 
   */
   public int eaten (double weight){
      if(weight == 0 || weight < 0 || weight > this.weight){  //if eaten weight is less than or equal 0 or it greater than the weight of existing cookies
@@ -113,7 +113,7 @@ public class Cookie{
   
   /**
   * return all attributes
-  * @return return attributes
+  * @return  String  return attributes
   */
   public String toString(){
        return ("\nname: " + this.name + "\nweight: " + this.weight + "\ncalories: " + this.calories + "\nisPackaged: " + this.isPackaged);
