@@ -24,7 +24,7 @@ public class Lu_Lucas_OOQuiz1{
       //eat cookie and gain energy
       human1.eat(cookie2,10);
       
-      //calories is 200, so the energy level should boost 13%
+      //calories for cookie2 is 200, so the energy level should boost 13%
       System.out.printf("Current energy is: %d percent",human1.getEnergyLevel());
       
    }
