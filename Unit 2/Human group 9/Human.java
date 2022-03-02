@@ -107,8 +107,7 @@ public class Human {
      */
     public void sleep(int hrs) {
       // increasing the energy level by 10% per hour
-      double new_energy = hrs * 0.1; //calculate how many percentages should be boost
-      this.energyLvl = this.energyLvl * (1 + new_energy); //calculate the final energy Level
+      this.energyLvl = this.energyLvl + (hrs * 10); //energyLevel stored as a percentage, therefore hrs should multiply by 10 means how many percentage boosted
       
       //modify attributes value so that it always inside the boundary (0-100)
       setEneregyLvl(this.energyLvl); 
