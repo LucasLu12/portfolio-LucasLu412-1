@@ -22,9 +22,9 @@ public class Human{
    
    /**
    * assign the value to each attributes
-   * @param name    String type the name of human
-   * @param energy  double type the energy of human
-   * @param weight  double type the weight of human
+   * @param  name    String  the name of human
+   * @param  energy  double  the energy of human
+   * @param  weight  double  the weight of human
    */
    public Human(String name, double weight, int energyLevel){
        this.name = name;
@@ -38,7 +38,7 @@ public class Human{
    
    /**
    * return the attribute name value
-   * @return  return name attributes value
+   * @return  String  return name attributes value
    */
    public String getName(){
        return this.name;
@@ -46,7 +46,7 @@ public class Human{
    
    /**
    * return the attributes energy value
-   * @return  return attributs energy value
+   * @return  int  return attributs energy value
    */
    public int getEnergyLevel(){
        return this.energyLevel;
@@ -54,7 +54,7 @@ public class Human{
    
    /**
    * return the attributes weight value
-   * @return  return attributes weight value
+   * @return double return attributes weight value
    */
    public double getWeight(){
       return this.weight;
@@ -62,7 +62,7 @@ public class Human{
    
    /**
    * set energylevel always between 0 percent to 100 percent
-   * @param energyLevel  int type indicate current energylevel
+   * @param energyLevel  int  indicate current energylevel
    */
    public void setEnergyLevel(int energyLevel){
      if (energyLevel > 100){
@@ -76,7 +76,7 @@ public class Human{
    
    /**
    * calculate how many weight lost after running and energy, each km will lose 3 percent of energy and 0.001 kg of weight
-   * @param km  double type, how many km is running    
+   * @param km  double  how many km is running    
    */
    public void run(double km){
       this.energyLevel = this.energyLevel - (int)(km * 3); //one km will lose 3 percent, because it stored as percentage, so it should be km *3
@@ -88,8 +88,7 @@ public class Human{
    
    /**
    * calculate how much energy get after sleeping, sleep one hour will boost 10 percent of energy
-   * @param hours  double type, how many hours is sleeping
-   * @return       
+   * @param hours  double  how many hours is sleeping
    */
    public void sleep(double hours){
        this.energyLevel = this.energyLevel + (int)(hours * 10); //because energylevel stored as a percentage, so one hour boost 10 percent, it should be hours * 10
@@ -100,8 +99,8 @@ public class Human{
    
    /**
    * calculate how many energyLevel get and how much weight get. The energy level will boost one percent each 15 calories
-   * @param veg     this is the vegetable object
-   * @param grams   double type this is the amount of vegetable eaten
+   * @param veg     Vegetable  this is the vegetable object
+   * @param grams   double     type this is the amount of vegetable eaten
    */
    public void eat(Vegetable veg, double grams){
       this.weight = this.weight + grams; //gain weight
@@ -136,7 +135,7 @@ public class Human{
    
    /**
    * return attributes value
-   * @return  return attributes value in order
+   * @return String return attributes value in order
    */
    public String toString(){
       return ("\nname: " + this.name + "\nenergyLevel: " + this.energyLevel + "\nweight: " + this.weight);
