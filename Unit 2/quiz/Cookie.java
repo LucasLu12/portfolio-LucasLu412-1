@@ -40,10 +40,10 @@ public class Cookie{
   
   /**
   * This cookie constructor assign values to attributes with four paramters
-  * @param name       String type which store cookie's name
-  * @param weight     double type stores cookie's weight
-  * @param calories   int type stores cookie's calories
-  * @param isPackaged boolean type to judge if it is packaged
+  * @param name        String type which store cookie's name
+  * @param weight      double type stores cookie's weight
+  * @param calories    int type stores cookie's calories
+  * @param isPackaged  boolean type to judge if it is packaged
   */
   public Cookie(String name, double weight, int calories, boolean isPackaged){
     this.name = name;
@@ -101,8 +101,8 @@ public class Cookie{
   * @return caloriesGiven double type return calories eaten cookies give 
   */
   public int eaten (double weight){
-     if(weight == 0 || weight < 0 || weight > this.weight){
-        return -1; // removed weight = 0 means it is not eaten
+     if(weight == 0 || weight < 0 || weight > this.weight){  //if eaten weight is less than or equal 0 or it greater than the weight of existing cookies
+        return -1; // means it is not eaten 
      } else if(this.isPackaged){
         return -2; // it is not eaten because it is still packaged
      } else{
