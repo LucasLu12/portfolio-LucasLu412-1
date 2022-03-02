@@ -79,7 +79,7 @@ public class Human{
    * @param km  double type, how many km is running    
    */
    public void run(double km){
-      this.energyLevel = this.energyLevel - (int)(km * 3);
+      this.energyLevel = this.energyLevel - (int)(km * 3); //one km will lose 3 percent, because it stored as percentage, so it should be km *3
       this.weight = this.weight - km * 0.001;
       
       //set energyLevel
@@ -92,7 +92,7 @@ public class Human{
    * @return       
    */
    public void sleep(double hours){
-       this.energyLevel = this.energyLevel + (int)(hours * 0.1);
+       this.energyLevel = this.energyLevel + (int)(hours * 10); //because energylevel stored as a percentage, so one hour boost 10 percent, it should be hours * 10
        
        //set energyLevl
        setEnergyLevel(this.energyLevel);
