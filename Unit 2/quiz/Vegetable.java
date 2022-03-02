@@ -20,9 +20,9 @@ public class Vegetable{
    
    /**
    * constuctors with three parameters and assign values to attributes
-   * @param name      String type name of vegetable 
-   * @param weight    double type the weight of vegetable
-   * @param calories  int type the calories of vegetable
+   * @param name      String  name of vegetable 
+   * @param weight    double  the weight of vegetable
+   * @param calories  int     the calories of vegetable
    */
    Vegetable(String name, double weight, int calories){
       this.name = name;
@@ -32,7 +32,7 @@ public class Vegetable{
    
    /**
    * accessors
-   * @return  attributes name
+   * @return  String  attributes name
    */
    public String getName(){
        return this.name;
@@ -40,7 +40,7 @@ public class Vegetable{
    
    /**
    * accessors
-   * @return  attributes weight
+   * @return  double  attributes weight
    */
    public double getWeight(){
        return this.weight;
@@ -48,7 +48,7 @@ public class Vegetable{
    
    /**
    * accessors
-   * @return  attributes calories
+   * @return  int  attributes calories
    */
    public int getCalories(){
        return this.calories; 
@@ -56,8 +56,8 @@ public class Vegetable{
    
    /**
    * calculate if it is eaten or how much calories it gives
-   * @return -1             means the vegetable were not eaten 
-   * @return caloriesGiven  how much calories was get after eating vetetables
+   * @return -1             int  means the vegetable were not eaten 
+   * @return caloriesGiven  int  how much calories was get after eating vetetables
    */
    public int eaten(double weight){
        if(weight < 0 || weight == 0 || weight > this.weight){
@@ -70,7 +70,7 @@ public class Vegetable{
    
    /**
   * return all attributes
-  * @return  return attributes in order
+  * @return  String  return attributes in order
   */
   public String toString(){
        return ("\nname: " + this.name + "\nweight: " + this.weight + "\ncalories: " + this.calories);
