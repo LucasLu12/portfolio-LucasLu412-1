@@ -19,10 +19,10 @@ public class Vegetable{
    }
    
    /**
-   * constuctors assign values to attributes
-   * @param name name
-   * @param weight weight
-   * @param calories calories
+   * constuctors with three parameters and assign values to attributes
+   * @param name      String type name of vegetable 
+   * @param weight    double type the weight of vegetable
+   * @param calories  int type the calories of vegetable
    */
    Vegetable(String name, double weight, int calories){
       this.name = name;
@@ -32,7 +32,7 @@ public class Vegetable{
    
    /**
    * accessors
-   * return attributes name
+   * @return  attributes name
    */
    public String getName(){
        return this.name;
@@ -40,7 +40,7 @@ public class Vegetable{
    
    /**
    * accessors
-   * return attributes weight
+   * @return  attributes weight
    */
    public double getWeight(){
        return this.weight;
@@ -48,7 +48,7 @@ public class Vegetable{
    
    /**
    * accessors
-   * return attributes calories
+   * @return  attributes calories
    */
    public int getCalories(){
        return this.calories; 
@@ -56,7 +56,7 @@ public class Vegetable{
    
    /**
    * calculate if it is eaten or how much calories it gives
-   * @return -1             means the vegetable were not eaten
+   * @return -1             means the vegetable were not eaten 
    * @return caloriesGiven  how much calories was get after eating vetetables
    */
    public int eaten(double weight){
