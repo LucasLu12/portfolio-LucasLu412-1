@@ -63,7 +63,7 @@ public class Vegetable{
        if(weight < 0 || weight == 0 || weight > this.weight){
          return -1; // mean do not eat that or greater than the original weight
        } else {
-         int caloriesGiven = calories * (int)(weight / this.weight);
+         int caloriesGiven = (int)((double)calories * (weight / this.weight));
          return caloriesGiven; // return the calories was given
        }
    }
