@@ -162,7 +162,7 @@ public class Human {
       //test run method
       System.out.println("\nTest object 1 with run method");
       human1.run(human1_run);
-      System.out.printf("After run %d km, the current weight is %.2f\n",human1_run,human1.getWeight());
+      System.out.printf("After run %d km, the current weight is %.2f kg\n",human1_run,human1.getWeight());
       
       //test sleep method
       System.out.println("\nTestobject 1 with the sleep method");
@@ -186,7 +186,7 @@ public class Human {
       //test run method
       System.out.println("\nTest object 2 with run method");
       human2.run(human2_run);
-      System.out.printf("After run %d km, the current weight is %.1f\n",human2_run,human2.getWeight());
+      System.out.printf("After run %d km, the current weight is %.1f kg\n",human2_run,human2.getWeight());
       
       //test sleep method
       System.out.println("\nTest object 2 with the sleep method");
