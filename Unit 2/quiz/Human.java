@@ -87,7 +87,7 @@ public class Human{
    }
    
    /**
-   * calculate how much energy get after sleeping
+   * calculate how much energy get after sleeping, sleep one hour will boost 10 percent of energy
    * @param hours  double type, how many hours is sleeping
    * @return       
    */
@@ -99,7 +99,7 @@ public class Human{
    }
    
    /**
-   * calculate how many energyLevel get and how much weight get
+   * calculate how many energyLevel get and how much weight get. The energy level will boost one percent each 15 calories
    * @param veg     this is the vegetable object
    * @param grams   double type this is the amount of vegetable eaten
    */
