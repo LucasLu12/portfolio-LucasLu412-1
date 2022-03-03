@@ -45,7 +45,7 @@ public class Human {
     * Accessors
     */
     /** get the name attribute value in class
-     * @return the name of the human
+     * @return  String  the name of the human
      */
     public String getName() {
         return this.name;
@@ -53,7 +53,7 @@ public class Human {
     
     
     /** get the weight attribute value in class
-     * @return the weight of the human
+     * @return double the weight of the human
      */
     public double getWeight() {
         return this.weight;
@@ -61,7 +61,7 @@ public class Human {
     
     
     /** get the energyLvl attributes value in class
-     * @return the energyLvl of the human
+     * @return double the energyLvl of the human
      */
     public double getEnergyLvl() {
         return this.energyLvl;
@@ -70,7 +70,7 @@ public class Human {
     
     /**
      * get the sex attributes value in class
-     * @return the sex of the human
+     * @return String the sex of the human
      */
     public String getSex() {
         return this.sex;
@@ -78,7 +78,7 @@ public class Human {
     
     
     /** get the age attributes value
-     * @return the age of the human
+     * @return  double the age of the human
      */
     public double getAge() {
         return this.age;
@@ -123,7 +123,7 @@ public class Human {
     
     /**
      * returns all the attributes of the human in a String
-     * @return a String with all attributes
+     * @return String a String with all attributes
      */
      public String toString() {
          return ("\nName: " + this.name + "\nAge: " + this.age + "\nWeight: " + this.weight + " kg\nEnergy Level: " + Math.round(this.energyLvl) + "%");
