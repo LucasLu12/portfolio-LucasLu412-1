@@ -125,9 +125,9 @@ public class Human{
       //if greater than the wieght,print message
       if(grams > food.getWeight()){
          System.out.println("I don’t have that much food");
-      } else if(food.getIsPackaged()){
+      } else if(food.getIsPackaged()){ //if it is packaged, print messages
          System.out.println("I can’t eat the bag");
-      } else {
+      } else { //if there is nothing break the rules, calculate what weight and energy gain 
          this.weight = this.weight + grams; //gain weight
          //calculate how much energy get from food
          this.energyLevel = this.energyLevel + (int)(((grams / food.getWeight()) * food.getCalories()) / 15);
