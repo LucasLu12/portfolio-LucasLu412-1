@@ -103,14 +103,16 @@ public class Human{
    * @param grams   double     type this is the amount of vegetable eaten
    */
    public void eat(Vegetable veg, double grams){
-      this.weight = this.weight + grams; //gain weight
-      
-      //gain energy from calories
-      this.energyLevel = this.energyLevel + (int)(veg.getCalories() / 15);
-      
       //if greater than weight, print messages
       if(grams > veg.getWeight()){
          System.out.println("I don’t have that much food");
+      } else{ // if it not greater than weight
+         this.weight = this.weight + grams; //gain weight
+      
+         //gain energy from calories
+         this.energyLevel = this.energyLevel + (int)(((grams / veg.getWeight()) * veg.getCalories()) / 15);    
+         //make sure energy level do not exceed boundary
+         setEnergyLevel(this.energyLevel);
       }
    }
    
@@ -120,16 +122,17 @@ public class Human{
    * @param grams  double type the amount of cookie eaten
    */
    public void eat(Cookie food, double grams){
-      this.weight = this.weight + grams; //gain weight
-      this.energyLevel = this.energyLevel + (int)(food.getCalories() / 15);
-      
       //if greater than the wieght,print message
       if(grams > food.getWeight()){
          System.out.println("I don’t have that much food");
-      }
-      
-      if(food.getIsPackaged()){
+      } else if(food.getIsPackaged()){
          System.out.println("I can’t eat the bag");
+      } else {
+         this.weight = this.weight + grams; //gain weight
+         //calculate how much energy get from food
+         this.energyLevel = this.energyLevel + (int)(((grams / food.getWeight()) * food.getCalories()) / 15);
+         //make sure it does not exceed boundary
+         setEnergyLevel(this.energyLevel);
       }
    }
    
