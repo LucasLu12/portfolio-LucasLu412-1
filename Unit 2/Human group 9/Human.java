@@ -150,7 +150,7 @@ public class Human {
       //Test object 1!!!
       //test toString methods
       System.out.print("Test object 1 \nUsing toString to get all attributes values");
-      System.out.println(human1.toString());
+      System.out.println(human1);
       
       //test all "get" accessors
       System.out.println("\nTest accessors \"get\" to print all attributes, it should be same with using toString prints out");
@@ -174,7 +174,7 @@ public class Human {
       //Test object 2
       //test toString methods
       System.out.print("Test object 2 \nUsing toString to get all attributes values");
-      System.out.println(human2.toString());
+      System.out.println(human2);
       
       //test all "get" accessors
       System.out.println("\nTest accessors \"get\" to print all attributes, it should be same with using toString prints out");
